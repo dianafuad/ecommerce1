@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" />
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link href="imgs/fav-icon.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css"
+        integrity="sha384-jbCTJB16Q17718YM9U22iJkhuGbS0Gd2LjaWb4YJEZToOPmnKDjySVa323U+W7Fv" crossorigin="anonymous" />
+        <link rel="stylesheet" href="css/sign-up.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product-details.css" />
+
+    <title>product details</title>
+</head>
+
+<body>
+       <!-- Start Navbar -->
+
+    <nav class="navbar navbar-expand-md navbar-light fixed-top text-center">
+        <!-- <a class="navbar-brand logo" href="#"><span>F</span>amilista<span>.com</span></a> -->
+        <ul class="social-icons">
+            <li class="nav-item mx-1">
+                <a class="nav-link" data-toggle="modal" data-target="#sign-up-in" href="#" data-toggle="tooltip"  data-container=".nav-link" data-placement="top" title="Sign in">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </li>
+            <li class="nav-item mx-1">
+                <a class="nav-link" href="#"><i class="fab fa-gratipay" data-toggle="tooltip" data-placement="top" title="Favorites"></i> </a>
+            </li>
+            <li class="nav-item ml-1">
+                <a class="nav-link" href="shopping-cart.html"><i class="fas fa-shopping-basket " data-toggle="tooltip" data-placement="top" title="Your Cart"></i></a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item mx-2 active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Catagories
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="shop.html">Women</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">Top Wear</a></li>
+                                <li class="dropdown-item"><a href="#">Bottom Wear</a></li>
+                                <li class="dropdown-item"><a href="#">Dresses</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Men</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">Top Wear</a></li>
+                                <li class="dropdown-item"><a href="#">Bottom Wear</a></li>
+                                <li class="dropdown-item"><a href="#">Suits</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Kids</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Boys</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a href="#">Top Wear</a></li>
+                                        <li class="dropdown-item"><a href="#">Bottom Wear</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Girls</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a href="#">Top Wear</a></li>
+                                        <li class="dropdown-item"><a href="#">Bottom Wear</a></li>
+                                        <li class="dropdown-item"><a href="#">Dresses</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a class="navbar-brand logo" href="index.html"><span>F</span>amilista<span>.com</span></a>
+          
+        </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <div class="container">
+        <!-- product -->
+        <div class="product-content product-wrap clearfix">
+            <div class="row">
+                <div class="col-md-6 col-12" id="detail">
+                    <div class="main_img">
+                        <div class="product-images demo-gallery">
+                            <div class="main-img-slider">
+                                <a data-fancybox="gallery" href="images/products-women6.jpg"><img
+                                        src="images/products-women6.jpg" class="img-fluid" /></a>
+                                <a data-fancybox="gallery" href="images/w-product-slider1.jpg"><img
+                                        src="images/w-product-slider1.jpg" class="img-fluid" /></a>
+                                <a data-fancybox="gallery" href="images/w-product-slider2.jpg"><img
+                                        src="images/w-product-slider2.jpg" class="img-fluid" /></a>
+                                <a data-fancybox="gallery" href="images/w-product-slider3.jpg"><img
+                                        src="images/w-product-slider3.jpg" class="img-fluid" /></a>
+                            </div>
+
+                            <ul class="thumb-nav">
+                                <li><img src="images/products-women6.jpg" /></li>
+                                <li><img src="images/w-product-slider1.jpg" /></li>
+                                <li><img src="images/w-product-slider2.jpg" /></li>
+                                <li><img src="images/w-product-slider3.jpg" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 left-side pl-5">
+                    <h2>Long-sleeved checkered cardigan</h2>
+
+                    <div class="rating">
+                        <i class="fa fa-star fa-2x text-warning"></i>
+                        <i class="fa fa-star fa-2x text-warning"></i>
+                        <i class="fa fa-star fa-2x text-warning"></i>
+                        <i class="fa fa-star fa-2x text-warning"></i>
+                        <i class="fa fa-star fa-2x text-muted"></i>
+
+                        <span class="pl-3">(109) reviews</span>
+                    </div>
+
+                    <hr />
+                    <div class="price-container">
+                        <span class="price">
+                            129.54 <span class="currency">EGP</span></span>
+
+                        <span class="discount">200 EGP</span>
+                    </div>
+
+                    <div class="choose-color">
+                        <h4>Pick Color :</h4>
+                        <div class="d-flex colors">
+                            <input type="radio" id="black" name="color-button" />
+                            <label for="black" class="black"></label>
+                            <input type="radio" id="red" name="color-button" />
+                            <label for="red" class="red ml-2"></label>
+                            <input type="radio" id="blue" name="color-button" />
+                            <label for="blue" class="ml-2 blue"></label>
+                            <input type="radio" id="yellow" name="color-button" />
+                            <label for="yellow" class="yellow ml-2"></label>
+                            <input type="radio" id="darkblue" name="color-button" />
+                            <label for="darkblue" class="darkblue ml-2"></label>
+                        </div>
+                    </div>
+
+                    <div class="choose-size">
+                        <h4>Pick Size :</h4>
+                        <div class="sizes">
+                            <input type="radio" id="small" name="size-button" checked />
+                            <label for="small">S</label>
+
+                            <input type="radio" id="mediam" name="size-button" />
+                            <label for="mediam">M</label>
+
+                            <input type="radio" id="large" name="size-button" />
+                            <label for="large">L</label>
+
+                            <input type="radio" id="xlarge" name="size-button" />
+                            <label for="xlarge">XL</label>
+
+                            <input type="radio" id="xxlarge" name="size-button" />
+                            <label for="xxlarge">XXL</label>
+                        </div>
+                    </div>
+
+                    <div class="quantity buttons_added">
+                        <input type="button" value="-" class="minus" />
+                        <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
+                            class="input-text qty text" size="4" pattern="" inputmode="" />
+                        <input type="button" value="+" class="plus" />
+                    </div>
+                    <hr />
+                    <div class="row mb-5">
+                        <div class="col d-inline-block">
+                            <a href="shopping-cart.html" class="btn add-to-cart btn-lg">
+                                Add to cart
+                                <i class="fas fa-shopping-basket"></i>
+                            </a>
+                        </div>
+                        <div class="col like">
+                            <a href="#"><i class="fab fa-gratipay"></i> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <br />
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu1">Comments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu2">Rating</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="home" class="container tab-pane active">
+                            <br />
+
+                            <p>
+                                Simple and elegant, this chequered longline cardigan will not
+                                only keep you warm and cosy but also accentuate your look for
+                                sure. This cardigan features long sleeves that offer
+                                protection to your arms as well. The neutral colour makes it
+                                an ideal match for most outfits.
+                            </p>
+                        </div>
+                        <div id="menu1" class="container tab-pane fade">
+                            <br />
+
+                            <div class=" bg-white   rounded shadow-sm p-4 mb-4  restaurant-detailed-ratings-and-reviews
+                  ">
+                                <a href="#" class="btn btn-outline-primary btn-sm float-right">Top Rated</a>
+                                <h5 class="mb-1">All Reviews</h5>
+                                <div class="reviews-members pt-4 pb-4">
+                                    <div class="media">
+                                        <a href="#"><img alt="Generic placeholder image"
+                                                src="http://bootdey.com/img/Content/avatar/avatar1.png"
+                                                class="mr-3 rounded-pill" /></a>
+                                        <div class="media-body">
+                                            <div class="reviews-members-header">
+                                                <span class="star-rating float-right">
+                                                    <a href="#"><i class="icofont-ui-rating active"></i></a>
+                                                    <a href="#"><i class="icofont-ui-rating active"></i></a>
+                                                    <a href="#"><i class="icofont-ui-rating active"></i></a>
+                                                    <a href="#"><i class="icofont-ui-rating active"></i></a>
+                                                    <a href="#"><i class="icofont-ui-rating"></i></a>
+                                                </span>
+                                                <h6 class="mb-1">
+                                                    <a class="text-black" href="#">Singh Osahan</a>
+                                                </h6>
+                                                <p class="text-gray">Tue, 20 Mar 2020</p>
+                                            </div>
+                                            <div class="reviews-members-body">
+                                                <p>
+                                                    Contrary to popular belief, Lorem Ipsum is not
+                                                    simply random text. It has roots in a piece of
+                                                    classical Latin literature from 45 BC, making it
+                                                    over 2000 years old. Richard McClintock, a Latin
+                                                    professor at Hampden-Sydney College in Virginia,
+                                                    looked up one of the more obscure Ipsum comes from
+                                                    sections
+                                                </p>
+                                            </div>
+                                            <div class="reviews-members-footer">
+                                                <a class="total-like" href="#"><i class="icofont-thumbs-up"></i>
+                                                    856M</a>
+                                                <a class="total-like" href="#"><i class="icofont-thumbs-down"></i>
+                                                    158K</a>
+                                                <span class="total-like-user-main ml-2" dir="rtl">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" href="#"
+                                                        data-original-title="Gurdeep Osahan"><img
+                                                            alt="Generic placeholder image"
+                                                            src="http://bootdey.com/img/Content/avatar/avatar5.png"
+                                                            class="total-like-user rounded-pill" /></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" href="#"
+                                                        data-original-title="Gurdeep Singh"><img
+                                                            alt="Generic placeholder image"
+                                                            src="http://bootdey.com/img/Content/avatar/avatar2.png"
+                                                            class="total-like-user rounded-pill" /></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" href="#"
+                                                        data-original-title="Askbootstrap"><img
+                                                            alt="Generic placeholder image"
+                                                            src="http://bootdey.com/img/Content/avatar/avatar3.png"
+                                                            class="total-like-user rounded-pill" /></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" href="#"
+                                                        data-original-title="Osahan"><img
+                                                            alt="Generic placeholder image"
+                                                            src="http://bootdey.com/img/Content/avatar/avatar4.png"
+                                                            class="total-like-user rounded-pill" /></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="reviews-members pt-4 pb-4">
+                                    <div class="media">
+                                        <a href="#"><img alt="Generic placeholder image"
+                                                src="http://bootdey.com/img/Content/avatar/avatar6.png"
+                                                class="mr-3 rounded-pill" /></a>
+                                        <div class="media-body">
+                                            <div class="reviews-members-header">
+                                                <span class="star-rating float-right">
+                                                    <a href="#"><i class="icofont-ui-rating active"></i></a>
+                                                    <a href="#"><i class="icofont-ui-rating active"></i></a>
+                                                    <a href="#"><i class="icofont-ui-rating active"></i></a>
+                                                    <a href="#"><i class="icofont-ui-rating active"></i></a>
+                                                    <a href="#"><i class="icofont-ui-rating"></i></a>
+                                                </span>
+                                                <h6 class="mb-1">
+                                                    <a class="text-black" href="#">Gurdeep Singh</a>
+                                                </h6>
+                                                <p class="text-gray">Tue, 20 Mar 2020</p>
+                                            </div>
+                                            <div class="reviews-members-body">
+                                                <p>
+                                                    It is a long established fact that a reader will be
+                                                    distracted by the readable content of a page when
+                                                    looking at its layout. The point of using Lorem
+                                                    Ipsum is that it has a more-or-less normal
+                                                    distribution of letters, as opposed to using
+                                                    'Content here, content here', making it look like
+                                                    readable English.
+                                                </p>
+                                            </div>
+                                            <div class="reviews-members-footer">
+                                                <a class="total-like" href="#"><i class="icofont-thumbs-up"></i> 88K</a>
+                                                <a class="total-like" href="#"><i class="icofont-thumbs-down"></i>
+                                                    1K</a>
+                                                <span class="total-like-user-main ml-2" dir="rtl">
+                                                    <a data-toggle="tooltip" data-placement="top" title="" href="#"
+                                                        data-original-title="Gurdeep Osahan"><img
+                                                            alt="Generic placeholder image"
+                                                            src="http://bootdey.com/img/Content/avatar/avatar5.png"
+                                                            class="total-like-user rounded-pill" /></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" href="#"
+                                                        data-original-title="Gurdeep Singh"><img
+                                                            alt="Generic placeholder image"
+                                                            src="http://bootdey.com/img/Content/avatar/avatar2.png"
+                                                            class="total-like-user rounded-pill" /></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" href="#"
+                                                        data-original-title="Askbootstrap"><img
+                                                            alt="Generic placeholder image"
+                                                            src="http://bootdey.com/img/Content/avatar/avatar3.png"
+                                                            class="total-like-user rounded-pill" /></a>
+                                                    <a data-toggle="tooltip" data-placement="top" title="" href="#"
+                                                        data-original-title="Osahan"><img
+                                                            alt="Generic placeholder image"
+                                                            src="http://bootdey.com/img/Content/avatar/avatar4.png"
+                                                            class="total-like-user rounded-pill" /></a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <a class="text-center w-100 d-block mt-4 font-weight-bold" href="#">See All
+                                        Reviews</a>
+                                </div>
+                                <div class="bg-white rounded shadow-sm p-4 mb-5 right-comment">
+                                    <h5 class="mb-4">Leave Comment</h5>
+
+                                    <form>
+                                        <div class="form-group">
+                                            <label>Your Comment</label>
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <button class="btn btn-primary btn-sm" type="button">
+                                                Submit Comment
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="menu2" class="container tab-pane fade">
+                            <br />
+                            <div class="progress skill-bar">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <span class="skill"><i class="fa fa-star"></i> 5 Star
+                                        <i class="val">25 reviews</i></span>
+                                </div>
+                            </div>
+                            <div class="progress skill-bar">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="29" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <span class="skill"><i class="fa fa-star"></i> 4 star<i class="val">3
+                                            reviews</i></span>
+                                </div>
+                            </div>
+                            <div class="progress skill-bar">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <span class="skill"><i class="fa fa-star"></i> 3 star<i class="val">34
+                                            reviews</i></span>
+                                </div>
+                            </div>
+                            <div class="progress skill-bar">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <span class="skill"><i class="fa fa-star"></i> 2 star<i class="val">1
+                                            review</i></span>
+                                </div>
+                            </div>
+                            <div class="progress skill-bar">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                    aria-valuemax="100">
+                                    <span class="skill"><i class="fa fa-star"></i> 1 star<i class="val">10
+                                            reviews</i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container new-products" id="new-products-section">
+        <div class="row">
+            <div class="col-12">
+                <div class="header">
+                    <h2><span>s</span>imilar <span>p</span>rodects</h2>
+                </div>
+
+                <div class="image-slider women">
+                    <div id="products4" class="owl-carousel mt-4">
+                        <!-- product1 -->
+                        <div class="item">
+                            <div class="card p-0">
+                                <div class="card-image" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="images/similar1.jpg" alt="" />
+                                </div>
+                                <div class="card-content d-flex flex-column justify-content-end">
+                                    <ul class="social-icons d-flex flex-column">
+                                        <li>
+                                            <a href="#">
+                                                <span class="fab fa-gratipay m-3"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fas fa-shopping-basket m-3"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="title pt-4 pb-1 d-flex justify-content-center">
+                                Winter Sweater
+                            </div>
+                            <div class="d-flex align-content-center justify-content-center">
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                            <div class="price d-flex justify-content-center">$ 60.0</div>
+                        </div>
+                        <!-- product2 -->
+                        <div class="item">
+                            <div class="card p-0">
+                                <div class="card-image" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="images/similar2.jpg" alt="" />
+                                </div>
+                                <div class="card-content d-flex flex-column justify-content-end">
+                                    <ul class="social-icons d-flex flex-column">
+                                        <li>
+                                            <a href="#">
+                                                <span class="fab fa-gratipay m-3"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fas fa-shopping-basket m-3"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="title pt-4 pb-1 d-flex justify-content-center">
+                                Winter Sweater
+                            </div>
+                            <div class="d-flex align-content-center justify-content-center">
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                            <div class="price d-flex justify-content-center">$ 60.0</div>
+                        </div>
+                        <!-- product3 -->
+                        <div class="item">
+                            <div class="card p-0">
+                                <div class="card-image" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="images/similar3.jpg" alt="" />
+                                </div>
+                                <div class="card-content d-flex flex-column justify-content-end">
+                                    <ul class="social-icons d-flex flex-column">
+                                        <li>
+                                            <a href="#">
+                                                <span class="fab fa-gratipay m-3"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fas fa-shopping-basket m-3"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="title pt-4 pb-1 d-flex justify-content-center">
+                                Winter Sweater
+                            </div>
+                            <div class="d-flex align-content-center justify-content-center">
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                            <div class="price d-flex justify-content-center">$ 60.0</div>
+                        </div>
+
+                        <!-- product4 -->
+                        <div class="item">
+                            <div class="card p-0">
+                                <div class="card-image" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="images/similar4.jpg" alt="" />
+                                </div>
+                                <div class="card-content d-flex flex-column justify-content-end">
+                                    <ul class="social-icons d-flex flex-column">
+                                        <li>
+                                            <a href="#">
+                                                <span class="fab fa-gratipay m-3"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fas fa-shopping-basket m-3"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="title pt-4 pb-1 d-flex justify-content-center">
+                                Winter Sweater
+                            </div>
+                            <div class="d-flex align-content-center justify-content-center">
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                            <div class="price d-flex justify-content-center">$ 60.0</div>
+                        </div>
+
+                        <!-- product5 -->
+                        <div class="item">
+                            <div class="card p-0">
+                                <div class="card-image" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="images/similar5jpg.jpg" alt="" />
+                                </div>
+                                <div class="card-content d-flex flex-column justify-content-end">
+                                    <ul class="social-icons d-flex flex-column">
+                                        <li>
+                                            <a href="#">
+                                                <span class="fab fa-gratipay m-3"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="fas fa-shopping-basket m-3"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="title pt-4 pb-1 d-flex justify-content-center">
+                                Winter Sweater
+                            </div>
+                            <div class="d-flex align-content-center justify-content-center">
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                                <span class="fas fa-star"></span>
+                            </div>
+                            <div class="price d-flex justify-content-center">$ 60.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end product -->
+
+    <div class="modal fade" id="sign-up-in" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="frame">
+                    <div class="sign-up-nav">
+                        <ul class="links">
+                            <li class="signin-active"><a class="btn">Existing User</a></li>
+                            <li class="signup-inactive"><a class="btn">New User</a></li>
+                        </ul>
+                    </div>
+                    <div ng-app ng-init="checked = false">
+                        <form class="form-signin" action="" method="post" name="form">
+                            <label for="fullname">Full name</label><input class="form-styling" type="text"
+                                name="username" placeholder="" />
+                            <label for="dlno">Driving License Number</label>
+                            <input class="form-styling" type="text" name="username" placeholder="" />
+                            <label for="password">Password</label>
+                            <input class="form-styling" type="text" name="password" placeholder="" />
+                            <input type="checkbox" id="checkbox" />
+                            <label for="checkbox"><span class="ui"></span>Keep me signed in</label>
+                            <div class="btn-animate">
+                                <a class="btn-signin">Login to your account</a>
+                            </div>
+                        </form>
+                        <form class="form-signup" action="" method="post" name="form">
+                            <label for="fullname">Full name</label>
+                            <input class="form-styling" type="text" name="email" placeholder="" /><label
+                                for="email">Email</label>
+                            <input class="form-styling" type="text" name="email" placeholder="" />
+                            <label for="dlno">Enter DL Number</label>
+                            <input class="form-styling" type="text" name="dlno" placeholder="" />
+                            <label for="password">Create password</label>
+                            <input class="form-styling" type="text" name="confirmpassword" placeholder="" />
+                            <a ng-click="checked = !checked" class="btn-signup">REGISTER</a>
+                        </form>
+                        <div class="success">
+                            <svg width="270" height="270" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
+                                id="check" ng-class="checked ? 'checked' : ''">
+                                <path fill="#ffffff"
+                                    d="M40.61,23.03L26.67,36.97L13.495,23.788c-1.146-1.147-1.359-2.936-0.504-4.314 c3.894-6.28,11.169-10.243,19.283-9.348c9.258,1.021,16.694,8.542,17.622,17.81c1.232,12.295-8.683,22.607-20.849,22.042 c-9.9-0.46-18.128-8.344-18.972-18.218c-0.292-3.416,0.276-6.673,1.51-9.578" />
+                            </svg>
+                            <div class="successtext">
+                                <p>
+                                    New User registered, Kindly check your email for
+                                    confirmation.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="forgot"><a href="#">Forgot your password?</a></div>
+                        <div>
+                            <div class="cover-photo"></div>
+                            <div class="profile-photo"></div>
+                            <h1 class="welcome">Welcome,User</h1>
+                            <a class="btn-goback" value="Refresh" onClick="history.go()">Go back</a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid mx-auto">
+        <div class="row d-flex pb-4 px-4">
+            <div class="col-md-8">
+                <div class="row d-flex justify-content-between">
+                    <div class="d-flex flex-column block-footer">
+                        <h5 class="footer-headings">About</h5>
+                        <p class="list-items">About Us</p>
+                        <p class="list-items">Advertising Opportunities</p>
+                        <p class="list-items">Contact Us</p>
+                        <p class="list-items">Work With Us</p>
+                        <p class="list-items">Blog</p>
+                    </div>
+                    <div class="d-flex flex-column block-footer">
+                        <h5 class="footer-headings">Festival Deals</h5>
+                        <p class="list-items">Diwali Offers</p>
+                        <p class="list-items">New Year Offers</p>
+                        <p class="list-items">Holi Offers</p>
+                        <p class="list-items">Rakhi Offers</p>
+                        <p class="list-items">Valentine's Day Offers</p>
+                    </div>
+                    <div class="d-flex flex-column block-footer">
+                        <h5 class="footer-headings">Top Stories</h5>
+                        <p class="list-items">Jabong Coupons</p>
+                        <p class="list-items">TataCliq Coupons</p>
+                        <p class="list-items">Shopclues Coupons</p>
+                        <p class="list-items">Koovs Coupons</p>
+                        <p class="list-items">Paytm Coupons</p>
+                        <p class="list-items">Zomato Coupons</p>
+                        <p class="list-items">Goair Coupons</p>
+                        <p class="list-items">Justrelief Coupons</p>
+                    </div>
+                    <div class="d-flex flex-column block-footer">
+                        <h5 class="footer-headings">Need Help?</h5>
+                        <p class="list-items">Getting Started</p>
+                        <p class="list-items">Contact Us</p>
+                        <p class="list-items">FAQ's</p>
+                        <p class="list-items">Press</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex flex-column pl-md-5 px-4">
+                    <h5 class="footer-headings pl-md-2">Download App</h5>
+                    <div class="g-play pb-5 border-left">
+                        <img class="img-g" src="images/playstore.png" />
+                    </div>
+                    <div class="d-flex flex-column pl-md-2 border-left pb-3">
+                        <h5 class="footer-headings mb-3">Follow Us</h5>
+                        <div class="row d-flex pl-2">
+                            <div class="fa fa-sm fa-facebook"></div>
+                            <div class="fa fa-sm fa-twitter"></div>
+                            <div class="fa fa-sm fa-google-plus"></div>
+                            <div class="fa fa-sm fa-pinterest"></div>
+                            <div class="fa fa-sm fa-linkedin"></div>
+                            <div class="fa fa-sm fa-youtube-play"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js "
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2 " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <script id="rendered-js">
+        /*--------------*/
+
+        // Main/Product image slider for product page
+        $("#detail .main-img-slider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            arrows: true,
+            fade: true,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            speed: 300,
+            lazyLoad: "ondemand",
+            asNavFor: ".thumb-nav",
+            prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable"><</span></div>',
+            nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable">></span></div>',
+        });
+
+        // Thumbnail/alternates slider for product page
+        $(".thumb-nav").slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false,
+            centerPadding: "0px",
+            asNavFor: ".main-img-slider",
+            dots: false,
+            centerMode: false,
+            draggable: true,
+            speed: 200,
+            focusOnSelect: true,
+            prevArrow: '<div class="slick-prev"><i class="i-prev"></i><span class="sr-only sr-only-focusable"><</span></div>',
+            nextArrow: '<div class="slick-next"><i class="i-next"></i><span class="sr-only sr-only-focusable">></span></div>',
+        });
+
+        //keeps thumbnails active when changing main image, via mouse/touch drag/swipe
+        $(".main-img-slider").on(
+            "afterChange",
+            function (event, slick, currentSlide, nextSlide) {
+                //remove all active class
+                $(".thumb-nav .slick-slide").removeClass("slick-current");
+                //set active class for current slide
+                $(".thumb-nav .slick-slide:not(.slick-cloned)")
+                    .eq(currentSlide)
+                    .addClass("slick-current");
+            }
+        );
+        //# sourceURL=pen.js
+    </script>
+   <script>
+       function wcqib_refresh_quantity_increments() {
+      jQuery(
+          "div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)"
+      ).each(function (a, b) {
+          var c = jQuery(b);
+          c.addClass("buttons_added"),
+              c
+              .children()
+              .first()
+              .before('<input type="button" value="-" class="minus" />'),
+              c
+              .children()
+              .last()
+              .after('<input type="button" value="+" class="plus" />');
+      });
+  }
+  String.prototype.getDecimals ||
+      (String.prototype.getDecimals = function () {
+          var a = this,
+              b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+          return b ?
+              Math.max(0, (b[1] ? b[1].length : 0) - (b[2] ? +b[2] : 0)) :
+              0;
+      }),
+      jQuery(document).ready(function () {
+          wcqib_refresh_quantity_increments();
+      }),
+      jQuery(document).on("updated_wc_div", function () {
+          wcqib_refresh_quantity_increments();
+      }),
+      jQuery(document).on("click", ".plus, .minus", function () {
+          var a = jQuery(this).closest(".quantity").find(".qty"),
+              b = parseFloat(a.val()),
+              c = parseFloat(a.attr("max")),
+              d = parseFloat(a.attr("min")),
+              e = a.attr("step");
+          (b && "" !== b && "NaN" !== b) || (b = 0),
+          ("" !== c && "NaN" !== c) || (c = ""),
+          ("" !== d && "NaN" !== d) || (d = 0),
+          ("any" !== e &&
+              "" !== e &&
+              void 0 !== e &&
+              "NaN" !== parseFloat(e)) ||
+          (e = 1),
+          jQuery(this).is(".plus") ?
+              c && b >= c ?
+              a.val(c) :
+              a.val((b + parseFloat(e)).toFixed(e.getDecimals())) :
+              d && b <= d ?
+              a.val(d) :
+              b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())),
+              a.trigger("change");
+      });
+
+  $(document).ready(function () {
+      $(".progress .progress-bar").css("width", function () {
+          return $(this).attr("aria-valuenow") + "%";
+      });
+  });
+
+   </script>
+    <script>
+       
+        $(function () {
+            $(".btn").click(function () {
+                $(".form-signin").toggleClass("form-signin-left");
+                $(".form-signup").toggleClass("form-signup-left");
+                $(".frame").toggleClass("frame-long");
+                $(".signup-inactive").toggleClass("signup-active");
+                $(".signin-active").toggleClass("signin-inactive");
+                $(".forgot").toggleClass("forgot-left");
+                $(this).removeClass("idle").addClass("active");
+            });
+        });
+
+        $(function () {
+            $(".btn-signup").click(function () {
+                $(".nav").toggleClass("nav-up");
+                $(".form-signup-left").toggleClass("form-signup-down");
+                $(".success").toggleClass("success-left");
+                $(".frame").toggleClass("frame-short");
+            });
+        });
+
+        $(function () {
+            $(".btn-signin").click(function () {
+                $(".btn-animate").toggleClass("btn-animate-grow");
+                $(".welcome").toggleClass("welcome-left");
+                $(".cover-photo").toggleClass("cover-photo-down");
+                $(".frame").toggleClass("frame-short");
+                $(".profile-photo").toggleClass("profile-photo-down");
+                $(".btn-goback").toggleClass("btn-goback-up");
+                $(".forgot").toggleClass("forgot-fade");
+            });
+        });
+    </script>
+</body>
+
+</html>
